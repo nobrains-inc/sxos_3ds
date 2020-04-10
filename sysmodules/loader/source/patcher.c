@@ -646,21 +646,21 @@ void patchCode(u64 progId, u16 progVer, u8 *code, u32 size, u32 textSize, u32 ro
             patchSize = 8;
             u32 currentFirm = BOOTCFG_FIRM;
 
-            static u16 *verStringsNands[] = { u" Sys",
-                                              u" Emu",
-                                              u"Emu2",
-                                              u"Emu3",
-                                              u"Emu4" },
+            static u16 *verStringsNands[] = { u"FRII",
+                                              u"FRII",
+                                              u"FRII",
+                                              u"FRII",
+                                              u"FRII" },
 
-                       *verStringsEmuSys[] = { u"EmuS",
-                                               u"Em2S",
-                                               u"Em3S",
-                                               u"Em4S" },
+                       *verStringsEmuSys[] = { u"FRII"
+                                               u"FRII",
+                                               u"FRII",
+                                               u"FRII" },
 
-                       *verStringsSysEmu[] = { u"SysE",
-                                               u"SyE2",
-                                               u"SyE3",
-                                               u"SyE4" };
+                       *verStringsSysEmu[] = { u"FRII",
+                                               u"FRII",
+                                               u"FRII",
+                                               u"FRII" };
 
             patch = (currentFirm != 0) == (currentNand != 0) ? verStringsNands[currentNand] :
                                           (!currentNand ? verStringsSysEmu[currentFirm - 1] : verStringsEmuSys[currentNand - 1]);
