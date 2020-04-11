@@ -44,17 +44,17 @@ Menu rosalinaMenu = {
     "Rosalina menu",
     .nbItems = 11,
     {
-        { "New 3DS menu...", MENU, .menu = &N3DSMenu },
-        { "Cheats...", METHOD, .method = &RosalinaMenu_Cheats },
-        { "Process list", METHOD, .method = &RosalinaMenu_ProcessList },
-        { "Take screenshot (slow!)", METHOD, .method = &RosalinaMenu_TakeScreenshot },
-        { "Debugger options...", MENU, .menu = &debuggerMenu },
-        { "System configuration...", MENU, .menu = &sysconfigMenu },
-        { "Screen filters...", MENU, .menu = &screenFiltersMenu },
-        { "Miscellaneous options...", MENU, .menu = &miscellaneousMenu },
-        { "Power off", METHOD, .method = &RosalinaMenu_PowerOff },
-        { "Reboot", METHOD, .method = &RosalinaMenu_Reboot },
-        { "Credits", METHOD, .method = &RosalinaMenu_ShowCredits }
+        { "SPEED...", MENU, .menu = &N3DSMenu },
+        { "FRII Cheats...", METHOD, .method = &RosalinaMenu_Cheats },
+        { "RAM HACC", METHOD, .method = &RosalinaMenu_ProcessList },
+        { "Take frii gam (FAST!)", METHOD, .method = &RosalinaMenu_TakeScreenshot },
+        { "BONGO HACC...", MENU, .menu = &debuggerMenu },
+        { "MON SYSTEME...", MENU, .menu = &sysconfigMenu },
+        { "FRII SCREEN FILTER...", MENU, .menu = &screenFiltersMenu },
+        { "AAAAAAAAAAAAAAAAA...", MENU, .menu = &miscellaneousMenu },
+        { "DIE", METHOD, .method = &RosalinaMenu_PowerOff },
+        { "DIE AND UNDO DIE", METHOD, .method = &RosalinaMenu_Reboot },
+        { "creditAAAAAAAAA", METHOD, .method = &RosalinaMenu_ShowCredits }
     }
 };
 
